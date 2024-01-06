@@ -24,10 +24,14 @@ export default function Prompt() {
         height: prompt.height,
         width: prompt.width,
       };
-      const output = await axios.post("/api/gen", body);
+      const output = await axios.post(
+        "https://gen-human-ai.vercel.app/api/gen",
+        body
+      );
       setLoading(false);
       setOutput(output.data.output[0]);
     } catch (error) {
+      setLoading(false);
       console.log(error);
     }
   }
