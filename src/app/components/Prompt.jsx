@@ -24,6 +24,7 @@ export default function Prompt() {
         height: prompt.height,
         width: prompt.width,
       };
+      // post
       const output = await axios.post(
         "https://gen-human-ai.vercel.app/api/gen",
         body
