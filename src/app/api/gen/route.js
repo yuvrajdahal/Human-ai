@@ -28,6 +28,5 @@ export async function POST(req) {
       },
     }
   );
-  console.log(output);
   return NextResponse.json({ output: output });
 }

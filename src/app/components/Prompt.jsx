@@ -38,7 +38,7 @@ export default function Prompt() {
   }
   return (
     <div className="flex flex-col-reverse  lg:flex-row">
-      <div className="w-full border border-white/10 lg:w-[400px] py-3 px-2">
+      <div className="w-full border border-white/10 lg:w-[400px] py-3 px-2 h-[500px]">
         <h1 className="text-xl text-white font-semibold">
           Start your generation
         </h1>
@@ -100,8 +100,9 @@ export default function Prompt() {
             />
           </div>
         </div>
+
         <button
-          className="text-white bg-white/5 hover:bg-white/10 px-4 py-2 mt-4 rounded-md border border-white/10"
+          className="text-white bg-white/5 hover:bg-white/10 px-4 py-2 mt-16 w-full rounded-md border border-white/10"
           onClick={submitHandler}
         >
           {isLoading ? "Loading" : "Generate"}
